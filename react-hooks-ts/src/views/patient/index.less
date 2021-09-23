@@ -1,0 +1,79 @@
+.patient-document {
+  display: flex;
+  height: calc(100vh - 100px);
+
+  .table-list {
+    width: 300px;
+    height: 100%;
+    padding: 10px;
+    padding-top: 0;
+
+    .search-bar {
+      margin-bottom: 10px;
+    }
+
+    .add-form {
+      margin-top: 10px;
+      height: 150px;
+
+      .ant-form-item {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  .details-info {
+    flex: 1;
+    height: 600px;
+    border: 1px solid #ccc;
+  }
+
+  .delete-icon {
+    display: none;
+  }
+
+  .ant-table-row {
+    cursor: pointer;
+
+    &.active {
+      background-color: #9cf;
+    }
+
+    &:hover {
+      .delete-icon {
+        display: block;
+      }
+    }
+  }
+
+  .ant-table-tbody>tr.ant-table-row:hover>td {
+    background-color: #9cf;
+  }
+
+  .details-info-container {
+    padding: 20px;
+  }
+
+  .details-title {
+    text-align: center;
+  }
+
+  .details-content {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .gutter-row {
+    margin-top: 20px;
+  }
+
+  .details-btns {
+    margin: 20px 0;
+   
+    .btn {
+      margin: 0;
+      margin-right: 20px;
+    }
+  }
+}

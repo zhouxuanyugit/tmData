@@ -1,0 +1,162 @@
+@import './transition.less';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100%;
+}
+
+.ant-layout {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.padding-content {
+  padding: 4px 0;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  // color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.block {
+  display: block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.inlineBlock {
+  display: block;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+.app-container {
+  padding-bottom: 20px;
+}
+
+.ant-descriptions-item-container .ant-descriptions-item-label {
+  min-width: 100px;
+  justify-content: flex-end;
+}
+
+.ant-picker.ant-picker-disabled, .ant-cascader-picker-disabled {
+  background-color: inherit !important;
+}
+
+/*-------滚动条整体样式----*/
+.ant-table-body::-webkit-scrollbar,
+.ant-table-content::-webkit-scrollbar,
+.tree-list::-webkit-scrollbar,
+.role-list::-webkit-scrollbar,
+.ant-layout-content::-webkit-scrollbar,
+.left-top::-webkit-scrollbar,
+.add-modal-table::-webkit-scrollbar,
+.details-table::-webkit-scrollbar,
+.expert-info-row::-webkit-scrollbar,
+.doc::-webkit-scrollbar,
+.doc-image-container::-webkit-scrollbar,
+.print-content::-webkit-scrollbar,
+.catelog::-webkit-scrollbar {
+  width: 3px;
+  height: 5px;
+}
+
+/*滚动条里面小方块样式*/
+.ant-table-body::-webkit-scrollbar-thumb,
+.ant-table-content::-webkit-scrollbar-thumb,
+.tree-list::-webkit-scrollbar-thumb,
+.role-list::-webkit-scrollbar-thumb,
+.ant-layout-content::-webkit-scrollbar-thumb,
+.left-top::-webkit-scrollbar-thumb,
+.add-modal-table::-webkit-scrollbar-thumb,
+.details-table::-webkit-scrollbar-thumb,
+.expert-info-row::-webkit-scrollbar-thumb,
+.doc::-webkit-scrollbar-thumb,
+.doc-image-container::-webkit-scrollbar-thumb,
+.print-content::-webkit-scrollbar-thumb,
+.catelog::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #ccc;
+}
+
+/*滚动条里面轨道样式*/
+.ant-table-body::-webkit-scrollbar-track,
+.ant-table-content::-webkit-scrollbar-track,
+.tree-list::-webkit-scrollbar-track,
+.role-list::-webkit-scrollbar-track,
+.ant-layout-content::-webkit-scrollbar-track,
+.left-top::-webkit-scrollbar-track,
+.add-modal-table::-webkit-scrollbar-track,
+.details-table::-webkit-scrollbar-track,
+.expert-info-row::-webkit-scrollbar-track,
+.doc::-webkit-scrollbar-track,
+.doc-image-container::-webkit-scrollbar-track,
+.print-content::-webkit-scrollbar-track,
+.catelog::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  background: #f5f5f5;
+}

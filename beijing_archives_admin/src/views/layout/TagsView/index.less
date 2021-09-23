@@ -1,0 +1,141 @@
+.tagsView-container {
+  white-space: nowrap;
+  width: 100%;
+  height: 36px;
+  // line-height: 36px;
+  // border-bottom: 1px solid #d8dce5;
+  // box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 0 3px 0 rgba(0, 0, 0, 0.04);
+  background-color: #eee;
+
+  .tags-wrap {
+    padding: 0;
+
+    &>li {
+      display: inline-block;
+
+      .ant-tag:hover {
+        opacity: 1;
+      }
+
+      .ant-tag {
+        height: 30px;
+        margin-top: 6px;
+        line-height: 29px;
+        -webkit-transition: all 0s;
+        transition: all 0s;
+        margin-right: 0;
+        padding: 0 10px;
+
+        &.ant-tag-default {
+          background-color: #eee;
+          border-color: #eee;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+        }
+
+        &.ant-tag-geekblue {
+          background-color: #fff;
+          color: rgba(0, 0, 0, 0.85);
+          border-color: #fff;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          position: relative;
+        }
+
+        &.ant-tag-geekblue:before,
+        &.ant-tag-geekblue:after {
+          content: "";
+          border-top: 30px solid transparent;
+          position: absolute;
+          top: 20px;
+        }
+
+        &.ant-tag-geekblue:before {
+          border-right: 15px solid #fff;
+          left: -15px;
+        }
+
+        &.ant-tag-geekblue:after {
+          border-left: 15px solid #fff;
+          right: -15px;
+        }
+
+        .tag-text {
+          display: inline-block;
+          height: 100%;
+        }
+      }
+
+      .ant-tag.ant-tag-default:hover {
+        background-color: rgb(250, 250, 250);
+        border-color: rgb(250, 250, 250);
+      }
+
+      .ant-tag.ant-tag-default:hover+.divider {
+        background-color: #eee;
+      }
+
+      &:first-of-type {
+        margin-left: 15px;
+      }
+
+      &:last-of-type {
+        margin-right: 15px;
+      }
+
+      .ant-tag-close-icon {
+        padding: 2px;
+        border-radius: 100%;
+
+        &:hover {
+          background-color: #ddd;
+        }
+      }
+    }
+  }
+
+  .divider {
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: #aaa;
+
+    &.hidden-d {
+      background-color: #eee;
+    }
+  }
+}
+
+.scrollbar-container {
+  overflow-y: hidden !important;
+}
+
+.scrollbar-track-vertical {
+  visibility: hidden !important;
+}
+
+.contextmenu {
+  margin: 0;
+  background: #fff;
+  z-index: 3000;
+  position: absolute;
+  list-style-type: none;
+  padding: 5px 0;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, .3);
+
+  li {
+    margin: 0;
+    padding: 0px 16px;
+    height: 30px;
+    line-height: 29px;
+    cursor: pointer;
+
+    &:hover {
+      background: #eee;
+    }
+  }
+}

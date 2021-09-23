@@ -1,0 +1,84 @@
+.doctor-advice-sheet {
+  display: flex;
+
+  .table-list {
+    width: 300px;
+    height: calc(100vh - 150px);
+    // border: 1px solid #ccc;
+    padding: 10px;
+
+    .search-bar {
+      margin-bottom: 10px;
+    }
+
+    .add-form {
+      margin-top: 10px;
+
+      .ant-form-item {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  .details-info {
+    flex: 1;
+    height: calc(100vh - 150px);
+    border: 1px solid #ccc;
+  }
+
+  .delete-icon {
+    display: none;
+  }
+
+  .ant-table-row {
+    cursor: pointer;
+
+    &.active {
+      background-color: #9cf;
+    }
+
+    &:hover {
+      .delete-icon {
+        display: block;
+      }
+    }
+  }
+
+  .ant-table-tbody>tr.ant-table-row:hover>td {
+    background-color: #9cf;
+  }
+
+  .details-info-container {
+    height: 100%;
+    padding: 10px;
+    display: flex;
+  }
+
+  .details-title {
+    text-align: center;
+  }
+
+  .details-content {
+    margin-top: 30px;
+  }
+
+  .gutter-row {
+    margin-top: 20px;
+  }
+
+  .details-search {
+    width: 300px;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-right: none;
+  }
+
+  .details-table {
+    flex: 1;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    overflow: auto;
+  }
+}

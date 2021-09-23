@@ -1,0 +1,87 @@
+.patient-document-details {
+  display: flex;
+
+  .menu-list {
+    width: 250px;
+  }
+
+  .menu-content {
+    flex: 1;
+    padding: 0 10px;
+    height: calc(100vh - 150px);
+  }
+
+  .ant-picker-input {
+
+    input {
+      border: none !important;
+    }
+  }
+
+  .list-container {
+    margin-top: 20px;
+    .item-list {
+      padding: 10px 0;
+    }
+
+    .item {
+      cursor: pointer;
+
+      &:hover, &.active {
+        color: #1890ff;
+      }
+    }
+  }
+}
+
+.health-doc-container {
+  display: flex;
+  height: 100%;
+
+  .catelog {
+    width: 250px;
+    height: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    overflow: auto;
+    background-color: #fff;
+  }
+
+  .content {
+    flex: 1;
+    height: 100%;
+    padding: 0 10px;
+
+    >div {
+      height: 100%;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      padding: 10px;
+    }
+
+    .content-form {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      .btns {
+        height: 45px;
+        border-bottom: 1px solid #ccc;
+
+        .btn {
+          margin-right: 20px;
+        }
+      }
+
+      .print-content {
+        flex: 1;
+        overflow: auto;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .report-title {
+    font-weight: 900;
+  }
+}

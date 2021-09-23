@@ -1,0 +1,49 @@
+.role-container {
+  display: flex;
+
+  .role-list {
+    width: 200px;
+    height: calc(100vh - 150px);
+    overflow: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-right: 1px solid #d9d9d9;
+
+    .role-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      padding: 5px;
+
+      &.active {
+        color: #1890ff;
+      }
+    }
+
+    .role-name {
+      flex: 1;
+      cursor: pointer;
+    }
+
+    .operate {
+      width: 40px;
+
+      >span {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .role-head {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tree-list {
+    flex: 1;
+    height: calc(100vh - 150px);
+    overflow: auto;
+    padding: 20px;
+    background-color: #fff;
+  }
+}

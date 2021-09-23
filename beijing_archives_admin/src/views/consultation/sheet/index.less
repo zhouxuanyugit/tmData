@@ -1,0 +1,107 @@
+.consultation-sheet {
+  display: flex;
+
+  .table-list {
+    width: 300px;
+    height: calc(100vh - 140px);
+    padding-right: 10px;
+
+    .search-bar {
+      margin-bottom: 10px;
+    }
+
+    .add-form {
+      margin-top: 10px;
+
+      .ant-form-item {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  .details-info {
+    flex: 1;
+    height: calc(100vh - 140px);
+    border: 1px solid #ccc;
+  }
+
+  .delete-icon {
+    display: none;
+  }
+
+  .ant-table-row {
+    cursor: pointer;
+
+    &.active {
+      background-color: #9cf;
+    }
+
+    &:hover {
+      .delete-icon {
+        display: block;
+      }
+    }
+  }
+
+  .ant-table-tbody>tr.ant-table-row:hover>td {
+    background-color: #9cf;
+  }
+
+  .details-info-container {
+    padding: 20px;
+    height: 100%;
+    position: relative;
+  }
+
+  .details-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .gutter-row {
+    margin-top: 20px;
+  }
+
+  .save-information-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    padding: 9px 0 9px 18px;
+    background-color: #fafafa;
+    width: 100%;
+  }
+
+  .expert-info-row {
+    padding-bottom: 10px;
+  }
+}
+
+.contextMenu-wrap {
+  z-index: 100;
+  position: fixed;
+  box-shadow: 0px 2px 5px #999999;
+  background-color: #fff;
+  border-radius: 5px;
+
+  .contextMenu-option {
+    padding: 5px 50px 5px 5px;
+    min-width: 80px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+
+    &:hover {
+      background: #1890ff;
+      color: white;
+    }
+  }
+}
+
+.table-list tr.drop-over-downward td {
+  border-bottom: 2px dashed #1890ff;
+}
+
+.table-list tr.drop-over-upward td {
+  border-top: 2px dashed #1890ff;
+}
