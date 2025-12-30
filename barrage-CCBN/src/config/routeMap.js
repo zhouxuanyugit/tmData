@@ -13,6 +13,5 @@ export default [
   { path: "/comments", component: comments },
   { path: "/manage", component: manage },
   { path: "/details", component: details },
-
   { path: "/error/404", component: Error404 },
 ];
